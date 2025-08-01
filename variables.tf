@@ -20,6 +20,11 @@ variable "environment" {
   default     = "Development"
 }
 
+variable "billing_code" {
+  type        = string
+  description = "(required) Billing code for network resources)"
+}
+
 variable "cidr_block" {
   type        = string
   description = "(Optional) The CIDR block for the VPC. Default:10.42.0.0/16"
